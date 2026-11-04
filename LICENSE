@@ -1,0 +1,10 @@
+This repository is dual-licensed:
+
+* The documentation (README.md, 0.75.md, 1.0.md, master.md and the README
+  files under examples/) is licensed under CC BY 4.0. See LICENSE-DOCS.
+
+* The example code (everything under examples/ that compiles: C and
+  GDScript) is licensed under the MIT licence. See LICENSE-CODE.
+
+Protocol descriptions are facts about an interface; an implementation you
+write from them is yours, and you may license it as you wish.
