@@ -45,7 +45,7 @@ An entry:
 | Field Name | Field Type | Notes |
 | --- | --- | --- |
 | Extension ID | Uint8 | see the registry |
-| Version | Uint8 | starting at 1 |
+| Version | Uint8 | at least 1; our server sends 1 |
 
 The aosprotocol page words `Count` as "length, `length+1` entries will
 follow". Our server writes and our client reads the **entry count**, with no
