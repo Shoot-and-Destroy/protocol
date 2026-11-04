@@ -1,0 +1,9 @@
+title: Shoot and Destroy Protocol Documentation
+description: > # this means to ignore newlines until "baseurl:"
+  Ace of Spades 0.75/0.76 and Shoot and Destroy 1.0: every packet, what the
+  server sends and expects, the master list, WebRTC, and C and Godot
+  examples.
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-minimal

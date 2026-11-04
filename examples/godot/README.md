@@ -113,7 +113,7 @@ Some custom Godot builds compile the `webrtc` module out.
 
 ## Testing the codecs without a server
 
-The golden vectors in `../../1.0.md` and `../c/test_codec.c` are the test:
+The golden vectors in `../../protocol10.md` and `../c/test_codec.c` are the test:
 
 ```gdscript
 func _ready() -> void:

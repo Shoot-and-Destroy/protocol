@@ -1,6 +1,6 @@
 class_name P10
 extends RefCounted
-## Protocol 1.0: constants, packet builders and decoders (see 1.0.md).
+## Protocol 1.0: constants, packet builders and decoders (see protocol10.md).
 ##
 ## Everything here works on PackedByteArray, so it is identical in a desktop
 ## build and a web export. The transport (ENet or WebRTC) is separate.

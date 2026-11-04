@@ -1,6 +1,6 @@
 /*
  * Golden vectors and round trips for the 1.0 codec. Build and run with
- * `make test` in this folder. Every hex string here is also in 1.0.md, so a
+ * `make test` in this folder. Every hex string here is also in protocol10.md, so a
  * port in another language can use the same file as its first test.
  *
  * MIT licence.

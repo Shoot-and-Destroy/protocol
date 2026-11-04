@@ -1,7 +1,7 @@
 class_name P075
 extends RefCounted
 ## Ace of Spades 0.75/0.76: constants, text, addresses and packet builders
-## (see 0.75.md). Uses P10Buf as a plain little-endian byte buffer.
+## (see protocol075.md). Uses P10Buf as a plain little-endian byte buffer.
 
 const CONNECT := 3
 const CONNECT_076 := 4

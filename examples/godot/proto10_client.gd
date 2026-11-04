@@ -7,7 +7,7 @@ extends Node
 ##   client.joined.connect(func(id): print("we are player ", id))
 ##   client.join(row)     # a row of the master list
 ##
-## This stops at "we are in the game". Add the pieces you need from 1.0.md:
+## This stops at "we are in the game". Add the pieces you need from protocol10.md:
 ## entities, terrain, chat, game mode.
 
 signal joined(player_id: int)

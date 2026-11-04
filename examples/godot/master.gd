@@ -1,6 +1,6 @@
 class_name SadMaster
 extends Node
-## The server list (see master.md).
+## The server list (see protocolmaster.md).
 ##
 ##   var master := SadMaster.new()
 ##   add_child(master)

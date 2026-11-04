@@ -1,5 +1,5 @@
 /*
- * Ace of Spades 0.75 / 0.76 helpers. See proto075.h and 0.75.md.
+ * Ace of Spades 0.75 / 0.76 helpers. See proto075.h and protocol075.md.
  *
  * MIT licence.
  */

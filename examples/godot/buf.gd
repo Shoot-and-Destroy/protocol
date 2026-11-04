@@ -1,6 +1,6 @@
 class_name P10Buf
 extends RefCounted
-## Byte reader/writer for protocol 1.0 (see 1.0.md section 3).
+## Byte reader/writer for protocol 1.0 (see protocol10.md section 3).
 ##
 ## The reader keeps a sticky `error`, like the C codec: check it once after
 ## decoding a whole packet, or use `at_end()` for packets whose length is

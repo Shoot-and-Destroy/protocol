@@ -1,7 +1,7 @@
 class_name SadWebRTC
 extends Node
 ## A protocol 1.0 connection over WebRTC, for a Godot desktop build and for
-## a web export (see 1.0.md section 2.2 and master.md section 6).
+## a web export (see protocol10.md and protocolprotocolmaster.md (WebRTC)).
 ##
 ##   var client := SadWebRTC.new()
 ##   add_child(client)

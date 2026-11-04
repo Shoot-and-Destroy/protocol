@@ -1,5 +1,5 @@
 /*
- * Protocol 1.0 primitive codec. See proto10.h and 1.0.md.
+ * Protocol 1.0 primitive codec. See proto10.h and protocol10.md.
  *
  * MIT licence.
  */
@@ -52,7 +52,7 @@ uint32_t p10_read_u32(p10_reader *r)
 }
 
 /* LEB128, at most 10 bytes; unlike the ngspades reference this keeps 64 bits
-   and rejects an endless run of 0x80 (1.0.md section 3.1) */
+   and rejects an endless run of 0x80 (protocol10.md, Data Types) */
 uint64_t p10_read_varint(p10_reader *r)
 {
     uint64_t v = 0;
@@ -254,7 +254,7 @@ int p10_read_weapon(p10_reader *r, p10_weapon_params *p)
     return p10_reader_ok(r);
 }
 
-/* compact trajectory scales (1.0.md section 6.5) */
+/* compact trajectory scales (protocol10.md, Entity Update Item) */
 #define CPOS 64.0f
 #define CVEL 1024.0f
 #define CPITCH (32767.0f / 1.57079632679f)

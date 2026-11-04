@@ -3,7 +3,7 @@
  *
  * Plain C99, no dependencies, no allocation: every reader works on a packet
  * you already received, every writer on a buffer you own. This is the
- * reference for sections 3 to 8 of 1.0.md.
+ * reference for protocol10.md.
  *
  * MIT licence (see ../README.md).
  */

@@ -3,7 +3,7 @@
 | File | What it is |
 | --- | --- |
 | `proto10.h`, `proto10.c` | the complete 1.0 primitive codec, plus encoders/decoders for the packets a client needs |
-| `test_codec.c` | golden vectors from `1.0.md` and round trips; `make test` |
+| `test_codec.c` | golden vectors from `protocol10.md` and round trips; `make test` |
 | `proto075.h`, `proto075.c` | the 0.75/0.76 packed structs, address parsing, CP437 text and packet builders |
 | `enet_client.c` | a real connection: range coder, connect data, both protocols, map download, join, body updates |
 | `master_http.c` | `GET /v1/servers` with libcurl and a minimal JSON row reader |
@@ -19,7 +19,7 @@ make master      # needs libcurl
 
 The codec is deliberately boring: one `p10_reader` with a sticky error flag,
 one `p10_writer` with a fixed buffer, and functions that return the decoded
-value. The rules implemented (and required) are in `1.0.md` section 3:
+value. The rules implemented (and required) are in `protocol10.md`, Data Types and decoder notes:
 
 * little-endian fixed-width values, LEB128 varints (max 10 bytes), zigzag
   signed varints;
@@ -58,7 +58,7 @@ are garbage.
 We do not ship a C WebRTC example because the browser side is the one that
 matters and a native client can use ENet. If you need WebRTC from C, use
 [libdatachannel](https://github.com/paullouisageneau/libdatachannel) (the one
-our server uses) and follow `master.md` section 5 and `1.0.md` section 2.2:
+our server uses) and follow `protocolprotocolmaster.md` (WebRTC) and `protocol10.md` (WebRTC):
 two DataChannels (`reliable`, `unreliable`), one SDP offer/answer through the
 master, the text `connect 135272729`, then one 1.0 packet per binary message.
 
