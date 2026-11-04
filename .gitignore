@@ -5,3 +5,5 @@ master_http
 .godot/
 *.import
 .DS_Store
+
+*.dSYM/
