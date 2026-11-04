@@ -1,0 +1,7 @@
+*.o
+test_codec
+enet_client
+master_http
+.godot/
+*.import
+.DS_Store
