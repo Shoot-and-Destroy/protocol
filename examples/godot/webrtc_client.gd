@@ -47,7 +47,10 @@ func join(row: Dictionary) -> void:
 	_pc = WebRTCPeerConnection.new()
 	var servers := []
 	for ice in row.get("ice_servers", []):
-		var entry := {"urls": ice.get("urls", [])}
+		var urls: Variant = ice.get("urls", [])
+		if typeof(urls) == TYPE_STRING:
+			urls = [urls]
+		var entry := {"urls": urls}
 		if ice.has("username"):
 			entry["username"] = ice["username"]
 		if ice.has("credential"):
@@ -124,7 +127,10 @@ func _on_answer(result: int, code: int, _headers: PackedStringArray, body: Packe
 		return
 	if code == 503:
 		var why: Variant = JSON.parse_string(body.get_string_from_utf8())
-		failed.emit(str(why.get("error", "refused")) if typeof(why) == TYPE_DICTIONARY else "refused")
+		if typeof(why) == TYPE_DICTIONARY:
+			failed.emit(str(why.get("error", "refused")))
+		else:
+			failed.emit("refused")
 		return
 	if code == 504:
 		failed.emit("no_answer")
@@ -196,7 +202,7 @@ func _drain(channel: WebRTCDataChannel, reliable: bool) -> void:
 func send(bytes: PackedByteArray, reliable := true) -> void:
 	if not _connect_sent:
 		return
-	var channel := _reliable if reliable else _unreliable
+	var channel: WebRTCDataChannel = _reliable if reliable else _unreliable
 	if channel == null or channel.get_ready_state() != WebRTCDataChannel.STATE_OPEN:
 		return
 	if bytes.size() > 16384:
