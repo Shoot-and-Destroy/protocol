@@ -26,7 +26,7 @@ that speak it; 1.0 starts from OpenSpades' abandoned
 
 | Project | 0.75 | 1.0 |
 | --- | --- | --- |
-| [Shoot and Destroy](https://github.com/Shoot-and-Destroy) client and server | Yes | Yes |
+| [Shoot and Destroy](https://github.com/ngspades) client and server | Yes | Yes |
 | [BetterSpades](https://github.com/xtreme8000/BetterSpades) | Yes | No |
 | [OpenSpades](https://github.com/yvt/openspades) | Yes | No |
 | [piqueserver](https://github.com/piqueserver/piqueserver) | Yes | No |

@@ -36,7 +36,7 @@ Copy the files into your project and keep the same function names if you can
 ## ENet notes
 
 `enet_client.c` is written against **ENet 1.3**, the one every Ace of Spades
-program uses. Our fork (github.com/Shoot-and-Destroy/enet, ENet 2's IPv6 API)
+program uses. Our fork (github.com/ngspades/enet, ENet 2's IPv6 API)
 changes three calls:
 
 ```c
