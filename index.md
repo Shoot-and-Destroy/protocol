@@ -8,8 +8,13 @@ server that should play with them.
 library](http://enet.bespin.org/Features.html) for all server-client
 communication. The 0.75 information comes from the original
 [pyspades](https://github.com/piqueserver/piqueserver) source and the clients
-that speak it; 1.0 starts from OpenSpades' abandoned
-[ngspades](https://github.com/yvt/openspades) branch, with its defects fixed.
+that speak it, plus the extensions [ZeroSpades](https://github.com/zerospades)
+registered for it, collected in the
+[aosprotocol](https://github.com/zerospades/aosprotocol) specification and
+spoken by the Shoot and Destroy client. 1.0 starts from the abandoned
+ngspades branch of OpenSpades (yvt's "strengtheningAo" work); the ngspades
+organization is reviving it, and the Shoot and Destroy server speaks
+**protocol 1.0**, its finished and documented form.
 
 ## Versions
 
@@ -26,9 +31,9 @@ that speak it; 1.0 starts from OpenSpades' abandoned
 
 | Project | 0.75 | 1.0 |
 | --- | --- | --- |
-| [Shoot and Destroy](https://github.com/ngspades) client and server | Yes | Yes |
+| [Shoot and Destroy](https://ngspades.obex.pw/) client and server | Yes (and the new ZeroSpades extensions) | Yes |
 | [BetterSpades](https://github.com/xtreme8000/BetterSpades) | Yes | No |
-| [OpenSpades](https://github.com/yvt/openspades) | Yes | No |
+| [OpenSpades](https://github.com/yvt/openspades) | Yes | No (its abandoned ngspades branch started 1.0) |
 | [piqueserver](https://github.com/piqueserver/piqueserver) | Yes | No |
 | [SpadesX](https://github.com/SpadesX/SpadesX) | Yes | No |
 

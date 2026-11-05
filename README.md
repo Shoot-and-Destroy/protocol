@@ -4,6 +4,24 @@ Documentation of the Ace of Spades **0.75/0.76** wire protocol and of
 **protocol 1.0**, the protocol of the Shoot and Destroy server, with C and
 Godot examples.
 
+Read online at
+[ngspades.github.io/protocol](https://ngspades.github.io/protocol/).
+
+## What is ngspades?
+
+*ngspades* was an unfinished OpenSpades branch by yvt that worked toward a
+next-generation Ace of Spades protocol ("strengtheningAo"); it was abandoned
+years ago. The [ngspades organization](https://github.com/ngspades) is
+reviving that work: [**Shoot and
+Destroy**](https://ngspades.obex.pw/) is our client and server, a fork of
+BetterSpades and of SpadesX's server. Its client speaks the classic
+0.75/0.76 protocol — including the new extensions ZeroSpades registered
+(Player Properties, Teamplay, Damage Markers, Pie Menu, Daytime and Weather,
+Flashlight and the rest of [aosprotocol](https://github.com/zerospades/aosprotocol)),
+and a public list — and with our own server it speaks **protocol 1.0**,
+the finished form of what ngspades started. These documents are the
+protocol 1.0 wire as our server speaks it, written from that work.
+
 Start at [index.md](index.md), or go straight to the protocol you need:
 
 | Document | Covers |
